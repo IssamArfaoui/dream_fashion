@@ -1,0 +1,458 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+/* vs  */
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 12px;
+    letter-spacing: 3px;
+    padding: 15px 20px;
+}
+button:hover {
+    background-color: white;
+    color: black;
+    transition: .3s;
+}
+.shopping button , .contact_all button, 
+.checkout button {
+    color: black;
+    border: 1px solid black;
+}
+.shopping button:hover ,
+.contact_all button:hover , 
+.checkout button:hover {
+    background-color: black;
+    color: white;
+}
+/* vs */
+/* start header */
+header {
+    position: absolute;
+    font-family: sans-serif;
+}
+header i:last-child {
+    display: none;
+}
+header ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 7px 14px;
+}
+header ul li a {
+    font-size: 17px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+}
+header .dream img {
+    width: 110px;
+}
+header ul.nav_bar {
+    display: block;
+}
+header .offcanvas-footer button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+header .offcanvas-footer button:hover {
+    background-color: black;
+    color: white;
+}
+header .offcanvas img {
+    width: 60px;
+}
+
+@media (max-width: 767px) {
+    header i:last-child {
+        display: block;
+        z-index: 1;
+    }
+    header ul li {
+        padding-top: 6%;
+        display: block;
+        position: relative;
+        transform: translateY(-50%);
+        top: 16%;
+    }
+    header ul { 
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        text-align: center;
+        display: none;
+        background-color: black;
+        height: 100vh;
+    }
+    header ul li a.active {
+        color: rgb(104, 102, 102);
+    }
+}
+
+/* end header */
+/* start Cart */
+
+.cart , 
+.cart span { 
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    
+}
+.cart h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased ;
+}
+.cart span {
+    color: grey;
+}
+/* End Cart */
+/* start landing */
+section .sec-1, section .sec-2,
+section .sec-3, section .sec-4 ,
+section .sec-5 ,section .sec_shop ,
+section .about , section .image_about ,
+section .contact {
+    height: 780px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.sec-1  {
+    background: url(../images/woman-posing-with-shopping-bags.jpg);
+}
+.sec-2 {
+    background: url(../images/backgroundmockup.jpg);
+}
+.sec-3 {
+    background: url(../images/background-ManWoman.jpg);
+}
+.sec-4 {
+    background: url(../images/shirt-mockup-concept-with-plain-clothing.jpg);
+}
+.sec-5 {
+    background: url(../images/abouUs.jpg);
+}
+.sec_shop {
+    background: url(../images/background-shop_store.jpg);
+}
+section .about {
+    background: url(../images/calculator-cup-coffee-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+section .image_about {
+    background: url(../images/young-beautiful-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+section .contact {
+    background: url(../images/contact-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+section .overlay {
+    background-color: rgb(0 0 0 /.4);
+    height: 100%;
+    width: 100%;
+}
+section .content .text ,
+section .about .text , 
+section .contact .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+
+section .content .text h6 ,
+section .content .text p ,
+section .content .text h2 ,
+.shopping table , .shopping h6 ,  
+.checkout {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+} 
+section .content .text h6  {
+    font-size: 11.032px;
+    letter-spacing: 3px;
+}
+section .content .text p {
+    font-size: 14px;
+}
+section .content .text h1 ,
+.panel_cart ,.shopping h1 ,
+ section .about , section .contact , .checkout h1{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+}
+@media (max-width: 767px) {
+    section .content .text {
+        width: 370px;
+    }
+}
+
+/* end landing */
+
+/* start product  */
+.product h1 , .related h1  {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+}
+.product .popular {
+    cursor: pointer;
+}
+.product .popular .select {
+    position: relative;
+}
+.product .popular .select .bag_shopping img {
+    width: 32px;
+    transform: translate(-50% , -50%);
+    background-color: rgb(255 255 255 /.2);
+    padding: 5px;
+    border-radius: 50%;
+    opacity: .9;
+}
+.product .popular .select .bag_shopping {
+    position: absolute;
+    top: 7%;
+    right: 10%;
+    opacity: 0;
+    transition: .3s;
+}
+.product .popular .select .bag_shopping img:hover {
+    background-color: white;
+    transition: .3s;
+    opacity: 1;
+}
+.product .popular .select:hover .bag_shopping  {
+    opacity: 1;
+}
+.product .popular .text span,
+header .price {
+    color: #B4B4B8;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+}
+.product .popular .text a {
+    color: black;
+    font-family: "Cormorant Garamond", 'serif';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+    -webkit-font-smoothing: antialiased;
+}
+.product .popular .text .price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17.784px;
+    font-style: normal;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+}
+/* end product  */
+
+/* start prd_man AND Shop */
+.sec-2 .row ,
+.sec-4 .row {
+    --bs-gutter-x: 0;
+}
+.prd_man h1,.prd_woman h1,
+.sec-3 span {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 90px;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: capitalize;
+    -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 767px) {
+    .prd_man  ,
+    .prd_woman .col {
+        width: 300px;
+    }
+    .prd_man img,
+    .prd_woman .col img {
+        width: 100%;
+    }
+    .prd_man h1,
+    .prd_woman h1 {
+        font-size: 50px;
+    }
+}
+
+/* end prd_man AND Shop *
+/
+/* start be Different  */
+.sec-3 span h1 {
+    font-size: 70px;
+}
+@media (max-width: 767px) {
+    .sec-3 {
+        background: url(../images/background-ManWoman-767.jpg);
+    }
+}
+/* End be Different */
+
+/* start About Us*/
+
+.sec-5 .overlay .text  {
+    width: 650px; 
+}
+.sec-5 .text h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: capitalize;
+    -webkit-font-smoothing: antialiased;
+}
+.sec-5 .text h1 b {
+    color: #b8b8b8be;
+}
+/* End About Us*/
+
+/* start Shipping  */
+.sec-6 .row {
+    --bs-gutter-x: 0rem;
+}
+.sec-6 .row .col {
+    width: 290px;
+}
+.sec-6 .row p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+}
+.sec-6 .row h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 31px;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: capitalize;
+    -webkit-font-smoothing: antialiased;
+}
+/* End Shipping */
+
+/* Start footer  */
+.footer {
+    background-color: #F5F7F8;
+}
+.footer ul li {
+    list-style: none;
+}
+.footer ul li a,
+.footer h3 {
+    margin: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11.768px;
+    font-style: normal;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    color: #000000;
+}
+.footer ul li a {
+    color: #45474B;
+}
+.footer ul h5 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20.24px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+    -webkit-font-smoothing: antialiased;
+}
+.footer h3 {
+    font-size: 15px;
+}
+/* End footer  */
+
+/* start about  */
+.abtus h1 , .contact h1 ,
+.contact_all .contact_content h2 ,
+.contact_all .row h2  {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+    text-transform: capitalize;
+} 
+.abtus p , .abtus h6 ,
+.contact_all .contact_content p ,
+.contact_all .row h6 {
+    font-size: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+}
+.image_about h1 {
+    font-size: 60px;
+}
+.abtus p ,
+.contact_all .contact_content p {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #3c3c3c;
+}
+.contact_all .row h2 {
+    font-size: 20px;
+}
+.contact_all .row h6 {
+    font-size: 13.532px;
+    color: #a4a4a6;
+}
+/* End about  */
+
+
